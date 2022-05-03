@@ -89,6 +89,11 @@ function generateMarkdown(data) {
   return `
   # ${data.title}${licenseBadge}
 
+  ## Description
+  ${data.description}
+
+  ***
+
   **Table of Contents:**
   - [Description](#description)
   - [Installation](#installation)
@@ -97,11 +102,6 @@ function generateMarkdown(data) {
   - [Test](#test)
   - [License](#license)
   - [Questions](#questions)
-
-  ***
-
-  ## Description
-  ${data.description}
 
   ***
 
@@ -136,16 +136,5 @@ function generateMarkdown(data) {
   Email: ${data.email}
 `;
 }
-
-// function generateMarkdown(data) {
-//   console.log(data.license)
-//   console.log(data.username)
-//   var license = data.license;
-//   var licenseLink = renderLicenseLink(license);
-//   var licenseSection = renderLicenseSection(license);
-  
-//   const usernamealtered = licenseLink
-//   return usernamealtered
-// }
 
 module.exports = generateMarkdown;
