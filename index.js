@@ -39,12 +39,12 @@ const questions = [
         message: 'Select which Licnese you would like to append to this project.',
         name: 'license',
         choices: [
-            'Apache 2.0',
-            'GNU GPL v3.0',
-            'BSD 3',
-            'MIT',
-            'Open Software License 3.0',
-            'None'
+            {name:'Apache 2.0', value:'apache'},
+            {name:'GNU GPL v3.0', value:'gpl'},
+            {name:'BSD 3', value:'bsd'},
+            {name:'MIT', value:'mit'},
+            {name:'Open Software License 3.0', value: 'opl'},
+            {name:'None', value: 'none'}
         ]
     },
     {
