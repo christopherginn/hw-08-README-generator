@@ -30,6 +30,8 @@
 
   Once you've completed the prompts, your new README file will be created in the project's directory as GeneratedREADME. Simply copy and paste it into your project's directory and rename it to whatever you like!
 
+  [Click here for a video demo](https://drive.google.com/file/d/1RkeSYqYa-cyxBltHkN0uqZeRkM08YXdR/view?usp=sharing)
+
   ***
 
   ## Contribution

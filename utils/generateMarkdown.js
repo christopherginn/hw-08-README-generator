@@ -132,7 +132,7 @@ function generateMarkdown(data) {
 
   ## Questions
   Feel free to reach out to me either on Github or by email.<br>
-  [Github](https://github.com/${data.username})<br>
+  [My Github](https://github.com/${data.username})<br>
   Email: ${data.email}
 `;
 }
