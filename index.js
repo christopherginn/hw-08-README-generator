@@ -6,6 +6,11 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 const questions = [
     {
         type: 'input',
+        message: 'Welcome to my README generator anybody can use for their next project. \n This will create a file called GeneratedREADME.md. \n You can use <br> in your responses to include line breaks. \n \n Press enter/return to start!',
+        name: 'welcome'
+    },
+    {
+        type: 'input',
         message: 'What is your project called?',
         name: 'title'
     },
@@ -56,23 +61,29 @@ const questions = [
         type: 'input',
         message: 'What is your email?',
         name: 'email',
+    },
+    {
+        type: 'input',
+        message: 'Got everything we need to create a README for your project! \n Click enter/return to generate it!',
+        name: 'finish'
     }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFileSync(fileName, data, (err) =>
+    err ? console.log(err) : console.log('Success!'));
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
         .prompt(questions)
         .then((data) => {
-            username2 = generateMarkdown(data)
-            console.log(username2)
+            data = generateMarkdown(data)
+            fileName = 'GeneratedREADME.md'
+            writeToFile(fileName, data);
         });
-
-    // console.log("init works")
-    // generateMarkdown()
 }
 
 // Function call to initialize app

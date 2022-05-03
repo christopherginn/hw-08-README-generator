@@ -4,19 +4,19 @@ function renderLicenseBadge(license) {
   let licenseBadge = ``;
   switch (license) {
     case 'apache':
-      licenseBadge = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124" height="20" role="img" aria-label="License: Apache 2.0"><title>License: Apache 2.0</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="124" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="51" height="20" fill="#555"/><rect x="51" width="73" height="20" fill="#007ec6"/><rect width="124" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="265" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="410">License</text><text x="265" y="140" transform="scale(.1)" fill="#fff" textLength="410">License</text><text aria-hidden="true" x="865" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="630">Apache 2.0</text><text x="865" y="140" transform="scale(.1)" fill="#fff" textLength="630">Apache 2.0</text></g></svg>`;
+      licenseBadge = `<div align="right">![badge](https://img.shields.io/badge/License-Apache%202.0-blue.svg)</div>`;
       break;
     case 'gpl':
-      licenseBadge = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146" height="20" role="img" aria-label="License: GNU GPL v3.00"><title>License: GNU GPL v3.00</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="146" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="51" height="20" fill="#555"/><rect x="51" width="95" height="20" fill="#007ec6"/><rect width="146" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="265" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="410">License</text><text x="265" y="140" transform="scale(.1)" fill="#fff" textLength="410">License</text><text aria-hidden="true" x="975" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="850">GNU GPL v3.00</text><text x="975" y="140" transform="scale(.1)" fill="#fff" textLength="850">GNU GPL v3.00</text></g></svg>`;
+      licenseBadge = `<div align="right">![badge](https://img.shields.io/badge/License-GNU%20General%20Public%20License%20v3.0-blue.svg)</div>`;
       break;
     case 'bsd':
-      licenseBadge = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="20" role="img" aria-label="License: BSD 3"><title>License: BSD 3</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="96" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="51" height="20" fill="#555"/><rect x="51" width="45" height="20" fill="#007ec6"/><rect width="96" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="265" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="410">License</text><text x="265" y="140" transform="scale(.1)" fill="#fff" textLength="410">License</text><text aria-hidden="true" x="725" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="350">BSD 3</text><text x="725" y="140" transform="scale(.1)" fill="#fff" textLength="350">BSD 3</text></g></svg>`;
+      licenseBadge = `<div align="right">![badge](https://img.shields.io/badge/License-BSD%203-blue.svg)</div>`;
       break;
     case 'mit':
-      licenseBadge = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="20" role="img" aria-label="License: MIT"><title>License: MIT</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="82" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="51" height="20" fill="#555"/><rect x="51" width="31" height="20" fill="#007ec6"/><rect width="82" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="265" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="410">License</text><text x="265" y="140" transform="scale(.1)" fill="#fff" textLength="410">License</text><text aria-hidden="true" x="655" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="210">MIT</text><text x="655" y="140" transform="scale(.1)" fill="#fff" textLength="210">MIT</text></g></svg>`;
+      licenseBadge = `<div align="right">![badge](https://img.shields.io/badge/License-MIT-blue.svg)</div>`;
       break;
     case 'opl':
-      licenseBadge = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="20" role="img" aria-label="License: Open Software License 3.0"><title>License: Open Software License 3.0</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="210" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="51" height="20" fill="#555"/><rect x="51" width="159" height="20" fill="#007ec6"/><rect width="210" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="265" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="410">License</text><text x="265" y="140" transform="scale(.1)" fill="#fff" textLength="410">License</text><text aria-hidden="true" x="1295" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="1490">Open Software License 3.0</text><text x="1295" y="140" transform="scale(.1)" fill="#fff" textLength="1490">Open Software License 3.0</text></g></svg>`;
+      licenseBadge = `<div align="right">![badge](https://img.shields.io/badge/License-Open%20Software%20License%203.0-blue.svg)</div>`;
       break;
     case 'none':
       licenseBadge= ``;
@@ -77,6 +77,7 @@ function renderLicenseSection(license, licenseLink) {
       licenseSection =``;
       break;
   }
+  return licenseSection;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -86,30 +87,52 @@ function generateMarkdown(data) {
   var licenseLink = renderLicenseLink(license);
   var licenseSection = renderLicenseSection(license, licenseLink);
   return `
-  # ${data.title}
-  ${licenseBadge}
+  # ${data.title}${licenseBadge}
+
+  **Table of Contents:**
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Test](#test)
+  - [License](#license)
+  - [Questions](#questions)
+
+  ***
 
   ## Description
   ${data.description}
 
+  ***
+
   ## Installation
   ${data.install}
+
+  ***
 
   ## Usage
   ${data.usage}
 
+  ***
+
   ## Contribution
   ${data.contribution}
+
+  ***
 
   ## Test
   ${data.test}
 
+  ***
+
   ## License
   ${licenseSection}
 
+  ***
+
   ## Questions
-  Feel free to reach out to me either on Github or by email.
-  [Github](https://github.com/${data.username})
+  Feel free to reach out to me either on Github or by email.<br>
+  [Github](https://github.com/${data.username})<br>
   Email: ${data.email}
 `;
 }
