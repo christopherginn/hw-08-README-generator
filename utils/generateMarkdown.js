@@ -17,8 +17,11 @@ function renderLicenseSection(license) {}
 // `;
 // }
 
-function generateMarkdown() {
+function generateMarkdown(data) {
   console.log("generateworks.js works")
+  console.log(data.username)
+  const usernamealtered = `${data.username} has been altered`
+  return usernamealtered
 }
 
 module.exports = generateMarkdown;
